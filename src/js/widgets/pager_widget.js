@@ -41,8 +41,6 @@ export default class PagerWidget extends Observable {
 
     onNext(payload) {
         this.updatePageNumbers(payload)
-        console.log("Next:")
-        console.log(payload)
     }
 
 }
