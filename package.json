@@ -1,0 +1,18 @@
+{
+  "name": "ccij-water-search",
+  "version": "1.0.0",
+  "description": "CCIJ Water Search",
+  "main": "index.js",
+  "author": "Adi Eyal <adi@openup.org.za>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "dependencies": {
+    "lunr": "^2.3.8"
+  }
+}

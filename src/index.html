@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Tue Aug 18 2020 13:04:31 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="5f3b719c55e07480ab510243" data-wf-site="5f3a3c5c4d04ca6c107e7afe">
+<head>
+  <meta charset="utf-8">
+  <title>OSISA Waterworld Search</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/osisa-waterworld-search.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Barlow:300,regular,italic,600,700,800,900","Karla:regular,italic,700"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <script src="https://kit.fontawesome.com/95e41092af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div data-w-id="d8f66561-e7d0-33b9-8b92-483975f7cd9d" style="opacity:0;-webkit-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="feedback">
+    <div class="feedback-button feedback-button--positive">
+      <div class="feedback-text">This tool is useful</div>
+      <div class="fas fa-thumbs-up"></div>
+    </div>
+    <div class="feedback-button feedback-button--negative">
+      <div class="feedback-text">This tool is not useful</div>
+      <div class="fas fa-thumbs-down"></div>
+    </div>
+    <div data-w-id="f8ee7def-2d20-e9b5-4680-31a3ed3c3a9d" class="feedback__dismiss">
+      <div class="fa fa-times"></div>
+    </div>
+  </div>
+  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="nav w-nav">
+    <div class="container container--nav">
+      <a href="#" class="brand w-nav-brand">
+        <h1 class="header-logo"><span class="text--primary">WATER</span> WORLD<span class="text--primary"></span></h1>
+      </a>
+      <nav role="navigation" class="nav-menu w-nav-menu"><a href="#" class="nav-link w-nav-link">Contact</a><a href="#" class="nav-link w-nav-link">Share</a></nav>
+      <div class="menu-button w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section section--hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Start exploring African water stories</h1>
+        <div class="hero-subtitle">Type a search term or add a filter to what&#x27;s already showing...</div>
+      </div>
+      <div class="hero-search">
+        <div id="article-search" class="article-search__wrapper w-form">
+          <form id="wf-form-Article-Search" name="wf-form-Article-Search" data-name="Article Search" class="article-search"><input type="text" class="search__bar w-input" autofocus="true" maxlength="256" name="field" data-name="Field" placeholder="Over 800 articles to explore..." id="search">
+            <div class="search__icon">
+              <div class="search-icon__bg"></div>
+              <div class="fa fa-search"></div>
+            </div>
+            <div class="search__loading">
+              <div data-w-id="d1820d0a-e14b-5079-ae2c-84791ce8495c" data-animation-type="lottie" data-src="documents/lottieflow-scrolling-05-2-66aaf8-easey.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="2.88" data-duration="0" data-ix2-initial-state="0" class="search__loading_animation"></div>
+            </div><a href="#" class="search__button">Search</a></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section section--bg section--last">
+    <div class="container">
+      <div class="filters__wrapper">
+        <div id="w-node-a7d02a662996-ab510243" class="filter__wrapper">
+          <div class="search-label">Filter by country:</div>
+          <div data-hover="" data-delay="0" class="dropdown-menu w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>All countries</div>
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              <div class="dropdown-list__inner">
+                <div class="dropdown-list__links"><a href="#" class="dropdown-link active w-dropdown-link">Dropdown-link .active</a><a href="#" class="dropdown-link w-dropdown-link">Dropdown-link</a></div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div id="w-node-9aec25cb5fe8-ab510243" class="filter__wrapper">
+          <div class="search-label">Filter by topic:</div>
+          <div class="filter-button__wrapper">
+            <a href="#" class="filter-button w-inline-block">
+              <div class="filter-button__label">Topic filter</div>
+              <div class="filter-button__close active">
+                <div class="fa fa-times"></div>
+              </div>
+            </a>
+            <a href="#" class="filter-button active w-inline-block">
+              <div class="filter-button__label">Topic filter active</div>
+              <div class="filter-button__close active">
+                <div class="fa fa-times"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="articles-loading__wrapper">
+        <div class="article-loading">
+          <div style="-webkit-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="articles-loading__grad"></div>
+        </div>
+        <div class="article-loading">
+          <div style="-webkit-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="articles-loading__grad"></div>
+        </div>
+        <div class="article-loading">
+          <div style="-webkit-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="articles-loading__grad"></div>
+        </div>
+      </div>
+      <div class="articles__wrapper hidden">
+        <a href="#" class="article__wrap w-inline-block">
+          <div class="article-image__wrap">
+            <div class="article-image"></div>
+            <div class="article-image__overlay"></div>
+          </div>
+          <div class="article-content__wrap">
+            <div class="article-content__country">Country</div>
+            <div class="article-content__title">
+              <div class="article-author">Author unavailable</div>
+              <h4 class="article-title">Title</h4>
+              <div class="article-keywords">This is some text inside of a div block.</div>
+            </div>
+            <div class="article-content__meta">
+              <div class="article-publisher">Publisher unavailable</div>
+              <div class="article-date">Date unavailable</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="pagination__wrapper">
+        <div class="pagination-inner"><a id="w-node-209137d78293-ab510243" href="#" class="pagination-button disabled">Previous page</a>
+          <div id="w-node-02c51ea8a727-ab510243" class="pagination-number"><span class="pagination-number--current">1</span> / <span class="pagination-number--total">1</span></div><a id="w-node-160a4f7de596-ab510243" href="#" class="pagination-button disabled">Next page</a></div>
+      </div>
+      <div class="hidden w-dyn-list">
+        <div role="list" class="articles__wrapper w-dyn-items">
+          <div role="listitem" class="collection-item w-dyn-item">
+            <a href="#" class="article__wrap w-inline-block">
+              <div class="article-image__wrap">
+                <div class="article-image"></div>
+                <div class="article-image__overlay"></div>
+              </div>
+              <div class="article-content__wrap">
+                <div class="article-content__country">Country unavailable</div>
+                <div class="article-content__title">
+                  <div class="article-author">Author unavailable</div>
+                  <h4 class="article-title">Article title unavailable</h4>
+                  <div class="article-keywords">This is some text inside of a div block.</div>
+                </div>
+                <div class="article-content__meta">
+                  <div class="article-publisher">Publisher unavailable</div>
+                  <div class="article-date">Date unavailable</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="w-dyn-empty">
+          <div>No items found.</div>
+        </div>
+        <div class="w-pagination-wrapper pagination">
+          <div class="pagination__inner">
+            <div class="pagination-button__wrap previous"><a href="#" class="w-pagination-previous previous"><svg class="w-pagination-previous-icon icon-2" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 12 12" transform="translate(0, 1)"><path fill="none" stroke="currentColor" fill-rule="evenodd" d="M8 10L4 6l4-4"></path></svg><div class="w-inline-block">Previous</div></a></div>
+            <div class="w-page-count page-count"></div>
+            <div class="pagination-button__wrap next">
+              <a href="#" class="w-pagination-next next">
+                <div class="w-inline-block">Next</div><svg class="w-pagination-next-icon icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 12 12" transform="translate(0, 1)"><path fill="none" stroke="currentColor" fill-rule="evenodd" d="M4 2l4 4-4 4"></path></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="w-layout-grid footer-grid">
+        <div id="w-node-b090edba82e0-ab510243" class="footer-column">
+          <h1 class="footer-lgoo"><span class="text--primary">WATER</span><br>WORLD</h1>
+        </div>
+        <div class="footer-column">
+          <div class="footer-logos"><img src="images/ccij-logo-black.png" srcset="images/ccij-logo-black.png 500w, images/ccij-logo-black.png 730w" sizes="(max-width: 479px) 52vw, 248.859375px" alt="" class="footer-logo ccij"><img src="images/openup-logo-white.svg" alt="" class="footer-logo openup"></div>
+          <p class="footer-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>An opensource project built by <a href="#" class="footer-link">OpenUp</a>. View on <a href="#" class="footer-link">GitHub</a>.<a href="#" class="footer-link"></a></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5f3a3c5c4d04ca6c107e7afe" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+$('#article-search').submit(function() {
+  return false;
+});
+</script>
+  <script src="js/index.js" type="text/javascript"></script>
+  <style>
+/*width*/
+.dropdown-list__inner::-webkit-scrollbar {
+width:6px;
+}
+/*track*/
+.dropdown-list__inner::-webkit-scrollbar-track {
+background:rgba(0, 0, 0, 0);
+border-color:rgb(255, 255, 255);
+}
+/*thumb*/
+.dropdown-list__inner::-webkit-scrollbar-thumb {
+background:rgb(83, 90, 99);
+border-width:4px;
+border-style:none;
+border-color:rgba(255, 255, 255, 0);
+border-radius:3px;
+}
+/*hide horizontal scroll*/
+.dropdown-list__inner {
+	overflow-x: hidden
+}
+</style>
+  <script>
+document.addEventListener('DOMContentLoaded', ()=>{
+ document.querySelectorAll('.filter-button').forEach(trigger => {
+  trigger.addEventListener('click', function(){ 
+    this.x = ((this.x || 0) + 1)%2; 
+    if(this.x){ 
+      document.querySelectorAll('.filter-button').forEach(target => target.classList.add('active'));
+    }
+    else{ 
+      document.querySelectorAll('.filter-button').forEach(target => target.classList.remove('active'));
+    } 
+  });
+ });
+});
+</script>
+</body>
+</html>
