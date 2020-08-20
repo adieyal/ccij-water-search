@@ -34,10 +34,10 @@ export default class ArticleDisplayWidget extends Observable {
 
     resetArticle(article) {
         $('.article-content__country', article).text("Country")
-        $('.article-author', article).text("Missing Author")
-        $('.article-title', article).text("Missing Title")
-        $('.article-date', article).text("Missing date")
-        $('.article-publisher', article).text("Missing publisher")
+        $('.article-author', article).text("Author unavailable")
+        $('.article-title', article).text("Title unavailable")
+        $('.article-date', article).text("Date unavailable")
+        $('.article-publisher', article).text("Publisher unavailable")
         $('.article-image', article).css('background-image', 'none');
     }
 
