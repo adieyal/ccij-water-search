@@ -50,6 +50,14 @@ export default class Pager extends Observable {
         return this._currentPage + 1;
     }
 
+    get isFirst() {
+        return this.currentPage == 1;
+    }
+
+    get isLast() {
+        return this.currentPage == this.numPages;
+    }
+
     pageIndexes(pageNo) {
         const startIdx = pageNo * this.pageSize;
         const endIdx = (pageNo + 1) * this.pageSize;

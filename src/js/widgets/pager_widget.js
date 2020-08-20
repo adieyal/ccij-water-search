@@ -9,16 +9,16 @@ export default class PagerWidget extends Observable {
 
     prepareDOM() {
         const paginationWrapper = $('.pagination-inner');
-        const prevButton = $('.pagination-button', paginationWrapper)[0];
-        const nextButton = $('.pagination-button', paginationWrapper)[1];
+        this.prevButton = $('.pagination-button', paginationWrapper)[0];
+        this.nextButton = $('.pagination-button', paginationWrapper)[1];
         this.pageNumberCurrent = $('.pagination-number--current', paginationWrapper)[0];
         this.pageNumberTotal = $('.pagination-number--total', paginationWrapper)[0];
 
-        $(prevButton).click(ev => {
+        $(this.prevButton).click(ev => {
             this.triggerEvent('pagerwidget.previous', this)
         })
 
-        $(nextButton).click(ev => {
+        $(this.nextButton).click(ev => {
             this.triggerEvent('pagerwidget.next', this)
         })
     }
@@ -28,19 +28,30 @@ export default class PagerWidget extends Observable {
         $(this.pageNumberTotal).text(pager.numPages)
     }
 
-    onPrevious(payload) {
-        this.updatePageNumbers(payload)
+    updateButtons(pager) {
 
-        console.log("Previous:")
-        console.log(payload)
+        if (pager.isFirst) $(this.prevButton).addClass("disabled");
+        else $(this.prevButton).removeClass("disabled");
+
+        if (pager.isLast) $(this.nextButton).addClass("disabled");
+        else $(this.nextButton).removeClass("disabled");
+    }
+
+    updateElements(pager) {
+        this.updatePageNumbers(pager);
+        this.updateButtons(pager);
+    }
+
+    onPrevious(payload) {
+        this.updateElements(payload);
     }
 
     onFirst(payload) {
-        this.updatePageNumbers(payload)
+        this.updateElements(payload);
     }
 
     onNext(payload) {
-        this.updatePageNumbers(payload)
+        this.updateElements(payload);
     }
 
 }
