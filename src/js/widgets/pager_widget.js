@@ -243,11 +243,12 @@ export default class PagerWidget extends Observable {
 
     updateButtons(pager) {
 
-        if (pager.isFirst) $(this.prevButton).addClass("disabled");
-        else $(this.prevButton).removeClass("disabled");
+        const disabledClass = 'pagination-button--disabled';
+        if (pager.isFirst) $(this.prevButton).addClass(disabledClass);
+        else $(this.prevButton).removeClass(disabledClass);
 
-        if (pager.isLast) $(this.nextButton).addClass("disabled");
-        else $(this.nextButton).removeClass("disabled");
+        if (pager.isLast) $(this.nextButton).addClass(disabledClass);
+        else $(this.nextButton).removeClass(disabledClass);
     }
 
     updateElements(pager) {
