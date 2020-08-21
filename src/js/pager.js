@@ -42,6 +42,12 @@ export default class Pager extends Observable {
         return this.page()
     }
 
+    toPage(page) {
+        this._currentPage = page - 1;
+        this.triggerEvent('pager.page', this)
+        return this.page()
+    }
+
     get numPages() {
         return Math.ceil(this.data.length / this.pageSize)
     }

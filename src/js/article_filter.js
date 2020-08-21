@@ -36,6 +36,7 @@ export default class ArticleFilter {
         state.pager.on("pager.previous", payload => pagerWidget.onPrevious(payload))
         state.pager.on("pager.next", payload => pagerWidget.onNext(payload))
         state.pager.on("pager.first", payload => pagerWidget.onFirst(payload))
+        state.pager.on("pager.page", payload => pagerWidget.onPage(payload))
 
         state.pager.first()
 

@@ -46,6 +46,13 @@ pagerWidget.on('pagerwidget.next', payload => {
     }
 })
 
+pagerWidget.on('pagerwidget.page', payload => {
+    if (state.pager) {
+        state.pager.toPage(payload)
+        articleDisplayWidget.displayArticles(state.pager);
+    }
+})
+
 searchWidget.on('searchwidget.search', payload => {
     state.query = payload;
     articleFilter.filterArticles();
@@ -58,6 +65,7 @@ countrySelectWidget.on('countryselectwidget.select', payload => {
 
 pagerWidget.on('pagerwidget.previous', payload => analytics.logEvent('search', 'pagerwidget.previous'))
 pagerWidget.on('pagerwidget.next', payload => analytics.logEvent('search', 'pagerwidget.next'))
+pagerWidget.on('pagerwidget.page', payload => analytics.logEvent('search', 'pagerwidget.page'))
 searchWidget.on('searchwidget.search', payload => analytics.logEvent('search', 'searchwidget.search', payload))
 countrySelectWidget.on('countryselectwidget.select', payload => analytics.logEvent('search', 'countryselectwidget.select', payload))
 
