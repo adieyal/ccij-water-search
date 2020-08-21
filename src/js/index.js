@@ -5,6 +5,7 @@ import PagerWidget from './widgets/pager_widget';
 import SearchWidget from './widgets/search_widget';
 import CountrySelectWidget from './widgets/country_select_widget';
 import ArticleDisplayWidget from './widgets/article_display_widget';
+import FeedbackWidget from './widgets/feedback_widget';
 
 import Analytics from './analytics';
 import Search from './search';
@@ -24,7 +25,9 @@ const searchEngine = new Search(data);
 const pagerWidget = new PagerWidget();
 const searchWidget = new SearchWidget();
 const countrySelectWidget = new CountrySelectWidget(data);
+const feedbackWidget = new FeedbackWidget();
 const articleDisplayWidget = new ArticleDisplayWidget(pageSize);
+
 const articleFilter = new ArticleFilter(state, data, {
     pagerWidget: pagerWidget,
     searchEngine: searchEngine,
@@ -68,6 +71,9 @@ pagerWidget.on('pagerwidget.next', payload => analytics.logEvent('search', 'page
 pagerWidget.on('pagerwidget.page', payload => analytics.logEvent('search', 'pagerwidget.page'))
 searchWidget.on('searchwidget.search', payload => analytics.logEvent('search', 'searchwidget.search', payload))
 countrySelectWidget.on('countryselectwidget.select', payload => analytics.logEvent('search', 'countryselectwidget.select', payload))
+feedbackWidget.on('feedbackwidget.thumbsdown', payload => analytics.logEvent('feedback', 'feedbackwidget.thumbsdown'))
+feedbackWidget.on('feedbackwidget.thumbsup', payload => analytics.logEvent('feedback', 'feedbackwidget.thumbsup'))
+feedbackWidget.on('feedbackwidget.dismiss', payload => analytics.logEvent('feedback', 'feedbackwidget.dismiss'))
 
 
 articleFilter.filterArticles();
