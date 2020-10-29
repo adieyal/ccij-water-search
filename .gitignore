@@ -6,3 +6,5 @@ dist/key
 *.sublime-workspace
 \.*.sw[po]
 dist
+key
+working
