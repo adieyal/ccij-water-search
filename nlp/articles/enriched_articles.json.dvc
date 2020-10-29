@@ -1,0 +1,3 @@
+outs:
+- md5: 8d83b71af8ec31d063d5eeb04c48c6c1
+  path: enriched_articles.json
